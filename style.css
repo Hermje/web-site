@@ -1,0 +1,160 @@
+body {
+  background-color: black;
+  border-left: 100px solid green;
+  border-right: 100px solid green;
+  background-clip: padding-box;
+  border-image-source: url('/Users/jakeherman/Desktop/flameborder.png');
+  border-image-slice: 200;
+}
+
+#header {
+  font-family:"akronim";
+  text-align: center;
+  background-color:#b0b5ba;
+  border-top: 30px solid #b0b5ba;
+  border-right: 30px solid #b0b5ba;
+  border-left: 30px solid #b0b5ba;
+  background-clip: padding-box;
+  border-image-source: url('/Users/jakeherman/Desktop/border-image-test.png');
+  border-image-slice: 50;
+  display:inline-block;
+  width:80%;
+}
+
+#sidebar {
+  font-family:"akronim";
+  margin-top: 50px;
+  position:fixed;
+  z-index: 1;
+  background-color:#b0b5ba;
+  color:black;
+  margin-left: 115px;
+  width: 10%;
+  height: 40%;
+  border: 30px solid #b0b5ba;
+  background-clip: padding-box;
+  border-image-source: url('/Users/jakeherman/Desktop/border-image-test.png');
+  border-image-slice: 50;
+}
+
+#sidebar ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#header-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-list {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+#nav-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav {
+  font-family:"akronim";
+  text-align: center;
+  background-color:#b0b5ba;
+  border-bottom: 30px solid #b0b5ba;
+  border-right: 30px solid #b0b5ba;
+  border-left: 30px solid #b0b5ba;
+  background-clip: padding-box;
+  border-image-source: url('/Users/jakeherman/Desktop/border-image-test.png');
+  border-image-slice: 50;
+  width:80%;
+}
+
+#post {
+  display: inline-block;
+  font-family:"akronim";
+  border: 30px solid #b0b5ba;
+  background-clip: padding-box;
+  border-image-source: url('/Users/jakeherman/Desktop/border-image-test.png');
+  border-image-slice: 50;
+  background-color:#b0b5ba;
+  margin-top: 50px;
+  margin-left: 400px;
+  margin-right: 100px;
+  padding:10px;
+}
+
+@keyframes imageRotate {
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
+}
+
+#post h3 {
+  background-color:white;
+  padding: 10px;
+}
+
+#post-content img {
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width:50%;
+  height:50%;
+  transform: rotate(0deg);
+  border: 20px solid #b0b5ba;
+  background-clip: padding-box;
+  border-image-source: url('/Users/jakeherman/Desktop/border-image.png');
+  border-image-slice: 150;
+}
+
+#post-content img:hover {
+  transform: rotate(0deg);
+  animation-name: imageRotate;
+  animation-duration: 5s;
+}
+
+#post-title {
+  text-align:center;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 20px solid #b0b5ba;
+  background-clip: padding-box;
+  border-image-source: url('/Users/jakeherman/Desktop/border-image.png');
+  border-image-slice: 80;
+}
+
+li.nav, a.nav {
+  width:60px;
+  text-align: center;
+  padding:5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+li.nav {
+  display:inline;
+  background-color:#d7dde2;
+  color:black;
+  height:50px;
+}
+
+a.nav {
+  display:inline-block;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+
+li.nav:hover {
+  font-family: "webdings";
+  border: 10px solid black;
+  background-clip: padding-box;
+  border-image-source: url('/Users/jakeherman/Desktop/flameborder.png');
+  border-image-slice: 100;
+}
